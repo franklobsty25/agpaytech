@@ -57,7 +57,7 @@ class TestController extends Controller
 
 
      // Importing content from currencies csv file into a database
-     public function importContentFromCurrenciesFile(Request $request)
+     public function importContentFromCurrenciesCsvFile(Request $request)
      {
          $validated = Validator::make($request->all(), [
              'currencies_file' => 'required|file'
@@ -117,7 +117,7 @@ class TestController extends Controller
 
 
     // Importing content from countries csv file into a database
-    public function importContentFromCountriesFile(Request $request)
+    public function importContentFromCountriesCsvFile(Request $request)
     {
         $validated = Validator::make($request->all(), [
             'countries_file' => 'required|file'
